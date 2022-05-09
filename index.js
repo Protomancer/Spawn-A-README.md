@@ -5,8 +5,6 @@ const fs = require('fs');
 
 const util = require('util');
 
-// const api = require('./utils/api.js');
-
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
@@ -105,7 +103,7 @@ const questions = [
     {
         type: 'list',
         message: "Select License",
-        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+        choices: [ 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'The Unlicense'],
         name: 'license',
         validate: function (answer) {
             if (answer.length <1) {
@@ -126,16 +124,13 @@ async function init(testData) {
         console.log('Response:', userResponse);
         console.log('Thanks,fetching gitHub info...')
         
-        // const userData = await api.getUser(userResponse);
-        // console.log ('gitHub user info:', userData);
-
         console.log ('Spawning your README....')
         const makeMarkdown = generateMarkdown(testData);
         console.log(makeMarkdown);
 
         // await writeFileAsync('testREADME.md', makeMarkdown)
 
-        fs.writeFile("userFile.md",makeMarkdown,err => {
+        fs.writeFile("READMEtest.md",makeMarkdown,err => {
             if (err){
                 return console.log(err);
             }
@@ -147,5 +142,3 @@ async function init(testData) {
     }
 };
 
-// Function call to initialize app
-// init();
