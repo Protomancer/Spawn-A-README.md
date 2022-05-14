@@ -11,27 +11,31 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
+// added the info outputs that the user chooses.
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  
 # github user name.  
-## ${data.username}
+ ${data.username}
+# Email
+ ${data.Email}
 # github user repo.
-## ${data.repo}
+ ${data.repo}
 # Project Title.
-## ${data.title}
+ ${data.title}
 # Project description.
-## ${data.description}
+ ${data.description}
 # How to install.
-## ${data.installation}
+ ${data.installation}
 # How to use the app.
-## ${data.usage}
+ ${data.usage}
 # How to contribute.
-## ${data.contributing}
+ ${data.contributing}
 # What test can you run?
-## ${data.tests}
+ ${data.tests}
 # What are the licenses being used?
-## ${data.license}
+ ${data.license}
 
 `;
 }

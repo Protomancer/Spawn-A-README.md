@@ -24,6 +24,17 @@ const questions = [
     },
     {
         type: 'input',
+        message: 'Current Email?',
+        name: 'Email',
+        validate: function (answer) {
+            if (answer.length < 1) {
+                return console.log('Please include a valid Email address.')
+            }
+            return true;
+        }
+    },
+    {
+        type: 'input',
         message: "What is the name of your repo?",
         name: 'repo',
         validate: function (answer) {
@@ -113,7 +124,7 @@ const questions = [
     }
 ];
 
-
+// takes the user responses and runs them through inquirer. 
 const userResponse = inquirer.prompt(questions).then(function(data){
 console.table(data)
 init(data)
@@ -127,8 +138,6 @@ async function init(testData) {
         console.log ('Spawning your README....')
         const makeMarkdown = generateMarkdown(testData);
         console.log(makeMarkdown);
-
-        // await writeFileAsync('testREADME.md', makeMarkdown)
 
         fs.writeFile("READMEtest.md",makeMarkdown,err => {
             if (err){
