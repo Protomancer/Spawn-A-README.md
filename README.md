@@ -1,10 +1,10 @@
 # Spawn-A-README.md
 
-The is an app designed to streamline the process for setting up a project. Spawn-A-README.md creates a template README.md for you to then fill out. Utilizing the console to quickly spawn templates and greatly increase the slow initial setup time can help make getting started on a new project much more pleasant.
+The is an app designed use [Inquirer.js](https://www.npmjs.com/package/inquirer) to streamline the process for setting up a project. Spawn-A-README.md creates a template README.md for you to then fill out. Utilizing the console to quickly spawn templates and greatly reduce initial setup time to help make getting started on a new project much more pleasant.
 
 ## Getting Started
 
-Follow these steps to get this project up and running on your system.
+The following will cover installation and usage of README.md.
 
 ### Prerequisites
 
@@ -64,10 +64,32 @@ Follow these steps to get this project up and running on your system.
     </ul>
     </details>
 
-## Using Spawn-A-Readme
+## Using Spawn-A-README.md
 
-Using spawn a readme is simple. Once you are in the main file folder with everything installed, simply type {npm start}. Then follow the prompts until complete. Congratulations, you have made a new README.md file. Happy coding!
+Using the app is simple. Once you are in the main file folder with everything installed, simply type {npm start}. Then follow the prompts until complete. Congratulations, you have made a new README.md file. Happy coding!
 
  ### App Usage Video
 https://drive.google.com/file/d/1wlhIA-KecvPDW51G31Xz2AP2UCm4T1tx/view
  
+### Project Toolkit
+
+ ![image](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+ ![image](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+
+ ![image](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+
+ ![image](https://raw.githubusercontent.com/SBoudrias/Inquirer.js/master/assets/inquirer_readme.svg?sanitize=true)
+
+
+### Contributors
+
+Scott "Billy" Pinkerton
+
+Contact: [GitHub](https://github.com/Protomancer) / [LinkedIn](https://www.linkedin.com/in/scott-billy-pinkerton/)
+
+
+### License
+
+![image](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+
